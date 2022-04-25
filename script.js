@@ -70,9 +70,9 @@ body.addEventListener('keyup',(event) =>{
       body.addEventListener('keyup',(e) =>{
         if(e.key === "l"){
            
-           let ulli = document.querySelector('ul')
+           let liul = document.querySelector('ul')
           
-           supall(ulli)
+           supall(liul)
           
         }
       })
