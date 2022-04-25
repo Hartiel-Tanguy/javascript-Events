@@ -6,6 +6,8 @@ const _initTime = Date.now()
 const getElapsedTime = () => {
   return Number((Date.now() - _initTime) / 1000).toFixed(2) + 's'
 }
+
+/*exercise 1*/
 const clickOnSquare = (e) => {
 
     let newDiv = document.createElement('div');
