@@ -76,4 +76,11 @@ body.addEventListener('keyup',(event) =>{
           
         }
       })
+      /*exercise 4*/
+
+      body.addEventListener('keyup', (e) =>{
+        if(e.key === "s"){
+          supall(section1)
+        }
+      })
 
