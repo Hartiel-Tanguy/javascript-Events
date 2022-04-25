@@ -36,5 +36,24 @@ const actionSquares = document.querySelectorAll('.actionsquare')
 for (let actionSquare of actionSquares) {
   actionSquare.addEventListener('click', clickOnSquare)
 }
+/*exercise 2*/
+let body = document.querySelector('body')
+function generateRandomColorRgb() {
+  const red = Math.floor(Math.random() * 256);
+  const green = Math.floor(Math.random() * 256);
+  const blue = Math.floor(Math.random() * 256);
+  return "rgb(" + red + ", " + green + ", " + blue + ")";
+}
+
+body.addEventListener('keyup',(event) =>{
+    if(event.code ==='Space'){
+      body.style.backgroundColor=generateRandomColorRgb();
+      let log = event.target.style.backgroundColor;
+      let ul = document.querySelector('ul')
+      let li = document.createElement('li');
+      ul.appendChild(li);
+      li.innerHTML= getElapsedTime() + " created a new " +log + " square" 
+    }
+    })
 
 
