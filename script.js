@@ -57,3 +57,23 @@ body.addEventListener('keyup',(event) =>{
     })
 
 
+
+    /*exercise 3*/
+
+    function supall(parent) {
+        while (parent.firstChild) {
+          parent.removeChild(parent.firstChild);
+        }
+      }
+      
+      
+      body.addEventListener('keyup',(e) =>{
+        if(e.key === "l"){
+           
+           let ulli = document.querySelector('ul')
+          
+           supall(ulli)
+          
+        }
+      })
+
